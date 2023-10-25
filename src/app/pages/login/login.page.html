@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar class="verdeSklttn">
+    <ion-title>SkelettonApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img src="assets/imgs/login.svg"></ion-img>
+  <ion-item>
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input [(ngModel)]="formLogin.usuario" placeholder="Ingrese su Correo Electrónico"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input [(ngModel)]="formLogin.pass" placeholder="Ingrese su contraseña" type="Password"></ion-input>
+  </ion-item> 
+  <ion-button (click)="iniciarSesion()" class="verdeSklttn" shape="block">Acceder</ion-button>
+  <ion-button [routerLink]="['/registro']" class="verdeSklttn" shape="block">Registrarse</ion-button>
+</ion-content>
